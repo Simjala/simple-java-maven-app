@@ -2,7 +2,7 @@ pipeline {
     agent {
         any {
             image 'maven:3-alpine' 
-            args '-v C:\apache-maven-3.6.3\bin' 
+            args '-v /root/.m2:/root/.m2' 
         }
     }
     stages {
